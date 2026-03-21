@@ -1,0 +1,9 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.ollama]
+command = "~/.local/bin/ollama-picker.sh" # Or your specific model
+animation = "fromTop"
+unfocus = "hide" # Automatically hides when you click away
+size = "60% 50%"
+lazy = true # Only starts when you first toggle it

@@ -1,0 +1,32 @@
+window {
+    background-color: #c0c0c0; /* Solaris/Win95 Grey */
+    border: 2px solid #808080;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+box {
+    padding: 15px;
+    /* The 3D Bevel effect */
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #444444;
+    border-bottom: 2px solid #444444;
+}
+
+/* The Progress Bar (The Volume Level) */
+progress-bar {
+    background-color: #ffffff; /* Sunken white background */
+    border: 2px inset #808080;
+    min-height: 10px;
+}
+
+progress-bar trough highlight {
+    background-color: #000080; /* Navy Blue (Classic Active) */
+}
+
+label {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px #888; 
+}

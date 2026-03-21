@@ -1,0 +1,39 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "modules-left": ["wlr/taskbar"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "cpu", "memory", "custom/vram"],
+
+    "wlr/taskbar": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+
+    "clock": {
+        "timezone": "America/Los_Angeles", // US Pacific
+        "format": "{:%I:%M %p}", // 12-hour format
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": {
+        "format": "CPU: {usage}% "
+    },
+
+    "memory": {
+        "format": "RAM: {percentage}% "
+    },
+
+    "custom/vram": {
+        "exec": "nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits", // Example for NVIDIA
+        "format": "VRAM: {}MB   ",
+        "interval": 10
+    },
+
+    "network": {
+        "format-wifi": "NET: {essid} ",
+        "format-ethernet": "NET: Wired   ",
+        "format-disconnected": "NET: OFF ⚠"
+    }
+}

@@ -1,0 +1,36 @@
+window {
+    margin: 0px;
+    border: 2px solid #808080; /* Outer dark edge */
+    background-color: #c0c0c0; /* Classic Grey */
+    font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+#outer-box {
+    margin: 5px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #444444;
+    border-bottom: 2px solid #444444;
+    padding: 10px;
+}
+
+#input {
+    margin: 5px;
+    border: 2px inset #808080; /* Sunken look for the search bar */
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#entry:selected {
+    background-color: #000080; /* Navy Blue highlight */
+    color: #ffffff;
+    outline: none;
+}
+
+#text {
+    margin: 2px;
+}
+
+#text:selected {
+    color: #ffffff;
+}
